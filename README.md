@@ -1,57 +1,64 @@
-📊 Project Overview
+## Project Overview
 
-This project explores Random Forest and Boosting algorithms for classification tasks. The focus was on training, tuning, and evaluating ensemble models for predictive accuracy.
+This project applies Logistic Regression to a dataset for binary classification. The main goal was to understand how Logistic Regression can be used for predicting categorical outcomes and to evaluate its performance against standard metrics.
 
-📂 Dataset
+## Dataset
 
-Downloaded online (classification dataset).
+A structured dataset containing both numerical and categorical features.
 
-
-🛠️ Methodology
-
-1. Data Cleaning & Feature Engineering.
+Target variable: binary classification (0/1).
 
 
-2. Model Training with Random Forest and Boosting.
+## Methodology
+
+1. Performed data preprocessing (handling missing values, encoding categorical variables).
 
 
-3. Model Evaluation using:
+2. Split data into training and testing sets.
+
+
+3. Trained a Logistic Regression model using scikit-learn.
+
+
+4. Evaluated performance using:
 
 Accuracy Score
 
 Confusion Matrix
 
-Precision, Recall, F1 Score
+Precision, Recall, F1-score
 
-ROC-AUC and ROC Curve
-
-
-
-4. Hyperparameter Tuning with GridSearchCV and RandomizedSearchCV.
+ROC Curve and AUC
 
 
 
-📈 Results
-
-Ensemble methods significantly outperformed baseline models.
-
-Boosting improved recall and ROC-AUC, while Random Forest provided stability.
+5. Interpreted model coefficients to understand feature importance.
 
 
-📚 What I Learned
 
-Working of Random Forest and Boosting classifiers.
+## Results
 
-How ensemble techniques reduce variance and bias.
+Logistic Regression provided solid baseline performance for classification.
 
-Role of hyperparameter tuning in achieving optimal results.
+Metrics like precision and recall highlighted trade-offs depending on class imbalance.
+
+ROC curve gave additional insights into model sensitivity.
 
 
-🔮 Future Work
+## What I Learned
 
-Extend to XGBoost and LightGBM for higher efficiency.
+How Logistic Regression works as a linear classifier for probabilities.
 
-Apply to financial datasets (stock movement prediction).
+How to interpret coefficients in terms of odds ratio.
+
+How to use classification metrics beyond accuracy.
+
+
+## Future Work
+
+Try Regularized Logistic Regression (L1, L2 penalties).
+
+Compare with tree-based classification models for better performance
 
 
 
